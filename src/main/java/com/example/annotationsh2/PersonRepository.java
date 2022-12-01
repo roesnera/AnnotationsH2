@@ -1,2 +1,8 @@
-package com.example.annotationsh2;public class PersonRepository {
+package com.example.annotationsh2;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PersonRepository extends JpaRepository<Person, Integer> {
 }
